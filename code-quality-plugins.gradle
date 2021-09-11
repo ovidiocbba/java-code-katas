@@ -1,0 +1,89 @@
+// [OM] Apply the Code Quality plugins.
+apply plugin: 'pmd'
+apply plugin: 'checkstyle'
+apply plugin: 'jacoco'
+
+// [OM] The Code Quality - Available tasks:'
+// All Checkstyle and PMD tasks.
+// gradle check
+
+// Runs Checkstyle against the production Java source files.
+// gradle checkstyleMain
+
+// Runs PMD against the production Java source files.
+// gradle pmdMain
+
+// Run Jacoco.
+// gradle jacocoTestReport
+
+// [OM] Checkstyle configuration.
+checkstyle {
+	// [OM] Set version to use.
+	toolVersion = '8.10'
+	// [OM] Ignore warning and let the build continue.
+	ignoreFailures = false
+	// [OM] Whether rule violations are to be displayed on the console.
+	showViolations = true
+	// [OM] The path to the configuration file.
+	configFile file("config/codingstylesettings/checkstyle/google_checks.xml")
+}
+tasks.withType(Checkstyle) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+        // [OM] The custom HTML report using an XSLT stylesheet.
+        html.stylesheet = resources.text.fromFile('config/codingstylesettings/checkstyle/xsl/checkstyle-noframes-severity-sorted.xsl')
+    }
+}
+
+// [OM] PMD configuration.
+pmd {
+	// [OM] Set version to use.
+	toolVersion = '6.38.0'
+	// [OM] Ignore warning and let the build continue.
+	ignoreFailures = true
+	// [OM] Set rules to use.
+	ruleSets = [
+			'java-android',
+			'java-basic',
+			'java-braces',
+			'java-clone',
+			'java-codesize',
+			'java-comments',
+			'java-controversial',
+			'java-coupling',
+			'java-empty',
+			'java-finalizers',
+			'java-imports',
+			'java-j2ee',
+			'java-javabeans',
+			'java-junit',
+			'java-logging-jakarta-commons',
+			'java-logging-java',
+			'java-migrating',
+			'java-naming',
+			'java-optimizations',
+			'java-strictexception',
+			'java-strings',
+			'java-sunsecure',
+			'java-typeresolution',
+			'java-unnecessary',
+			'java-unusedcode'
+	]
+}
+tasks.withType(Pmd) {
+	reports {
+		xml.enabled = false
+		html.enabled = true
+	}
+}
+
+// [OM] Jacoco configuration.
+jacocoTestReport {
+	reports {
+		xml.enabled = false
+		html.enabled = true
+	}
+}
+
+check.dependsOn jacocoTestReport

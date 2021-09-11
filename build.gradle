@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+apply from: 'code-quality-plugins.gradle'
+
+group 'com.ovidiomiranda.javacodekatas'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+test {
+    afterTest { description, result ->
+        logger.quiet "Test: ${description.name} in [${description.className}] with result: ${result.resultType}"
+    }
+}
+
+javadoc {
+    source sourceSets.main.allJava
+    destinationDir = file("$buildDir/javadoc")
+    title = 'Java Code Katas'
+    options.footer = "Generated on ${new Date().format('dd MMM yyyy')}"
+    options.header = "Documention for version ${project.version}"
+}
