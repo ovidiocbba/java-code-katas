@@ -9,6 +9,8 @@
 <b>7 Kyu</b>
 <ol>
   <li>Highest and Lowest(RowWeight)</li>
+  <li>Mumbling (Mumbling)</li>
+  <li>Row Weight (RowWeight)</li>
 </ol>
 
 ### [CodeWars profile:](https://www.codewars.com/users/OvidioMiranda)
