@@ -13,6 +13,10 @@
   <li>Row Weight (RowWeight)</li>
   <li>Silly Addition(SillyAddition)</li>
 </ol>
+<b>6 Kyu</b>
+<ol>
+  <li>Mexican Wave (MexicanWave)</li>
+</ol>
 
 ### [CodeWars profile:](https://www.codewars.com/users/OvidioMiranda)
 ![Codewars Rank](https://www.codewars.com/users/OvidioMiranda/badges/large)
