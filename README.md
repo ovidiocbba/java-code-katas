@@ -11,6 +11,7 @@
   <li>Highest and Lowest(RowWeight)</li>
   <li>Mumbling (Mumbling)</li>
   <li>Row Weight (RowWeight)</li>
+  <li>Silly Addition(SillyAddition)</li>
 </ol>
 
 ### [CodeWars profile:](https://www.codewars.com/users/OvidioMiranda)
