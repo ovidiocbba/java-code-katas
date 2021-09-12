@@ -1,6 +1,7 @@
 package com.ovidiomiranda.javacodekatas.sevenkyu;
 
 import static com.ovidiomiranda.javacodekatas.utils.Messages.NOT_EQUALS;
+import static java.lang.String.format;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -31,6 +32,6 @@ public class HighestAndLowestTest {
   public void test1() {
     final String expected = "42 -9";
     final String actual = highestAndLowest.highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4");
-    assertEquals(NOT_EQUALS, expected, actual);
+    assertEquals(format(NOT_EQUALS, expected, actual), expected, actual);
   }
 }

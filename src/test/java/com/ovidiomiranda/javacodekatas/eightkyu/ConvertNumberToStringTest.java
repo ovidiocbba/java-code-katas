@@ -1,6 +1,7 @@
 package com.ovidiomiranda.javacodekatas.eightkyu;
 
 import static com.ovidiomiranda.javacodekatas.utils.Messages.NOT_EQUALS;
+import static java.lang.String.format;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -31,7 +32,7 @@ public class ConvertNumberToStringTest {
   public void testOne() {
     final String expected = "67";
     final String actual = convertNumber.numberToString(67);
-    assertEquals(NOT_EQUALS, expected, actual);
+    assertEquals(format(NOT_EQUALS, expected, actual), expected, actual);
   }
 
   /**
@@ -41,7 +42,7 @@ public class ConvertNumberToStringTest {
   public void testTwo() {
     final String expected = "123";
     final String actual = convertNumber.numberToString(123);
-    assertEquals(NOT_EQUALS, expected, actual);
+    assertEquals(format(NOT_EQUALS, expected, actual), expected, actual);
   }
 
   /**
@@ -51,6 +52,6 @@ public class ConvertNumberToStringTest {
   public void testThree() {
     final String expected = "999";
     final String actual = convertNumber.numberToString(999);
-    assertEquals(NOT_EQUALS, expected, actual);
+    assertEquals(format(NOT_EQUALS, expected, actual), expected, actual);
   }
 }
