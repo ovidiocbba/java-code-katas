@@ -26,7 +26,7 @@ public class SillyAddition {
    * @param numberTwo the number two.
    * @return add using a silly addition.
    */
-  public int add(int numberOne, int numberTwo) {
+  public int add(final int numberOne, final int numberTwo) {
     final String stringOne = new StringBuilder(Integer.toString(numberOne)).reverse().toString();
     final String stringTwo = new StringBuilder(Integer.toString(numberTwo)).reverse().toString();
     final int maxRange = Math.max(stringOne.length(), stringTwo.length());
