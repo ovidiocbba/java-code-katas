@@ -1,4 +1,4 @@
-### JAVA Solutions 
+### JAVA Solutions
 
 <b>8 Kyu</b>
 <ol>
@@ -16,6 +16,7 @@
 <b>6 Kyu</b>
 <ol>
   <li>Mexican Wave (MexicanWave)</li>
+  <li>ReducingBySteps (ReducingBySteps)</li>
 </ol>
 
 ### [CodeWars profile:](https://www.codewars.com/users/OvidioMiranda)
