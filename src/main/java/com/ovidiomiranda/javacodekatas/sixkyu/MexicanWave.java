@@ -14,8 +14,8 @@ import java.util.List;
  *
  * <p><b>Rules:</b></p>
  * <ul>
- *  <li>1. The input string will always be lower case but maybe empty.</li>
- *  <li>2. If the character in the string is whitespace then pass over it as if it was an empty seat</li>
+ *  <li>1.The input string will always be lower case but maybe empty.</li>
+ *  <li>2.If the character in the string is whitespace then pass over it as if it was an empty seat</li>
  * </ul>
  *
  * <p><b>Example:</b></p>
