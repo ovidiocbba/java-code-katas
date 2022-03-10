@@ -9,7 +9,13 @@ package com.ovidiomiranda.javacodekatas.sevenkyu;
  */
 public class SquareEveryDigit {
 
-  public int squareDigits(int n) {
+  /**
+   * Square Every Digit.
+   *
+   * @param n the number.
+   * @return the square every digit.
+   */
+  public int squareDigits(final int n) {
     StringBuilder concatenate = new StringBuilder();
     String value = Integer.toString(n);
     for (int i = 0; i < value.length(); i++) {
