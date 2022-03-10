@@ -13,6 +13,7 @@
   <li>Mumbling (Mumbling)</li>
   <li>Row Weight (RowWeight)</li>
   <li>Silly Addition(SillyAddition)</li>
+  <li>Square Every Digit(SquareEveryDigit)</li>
 </ol>
 <b>6 Kyu</b>
 <ol>
@@ -21,6 +22,7 @@
 </ol>
 
 ### [CodeWars profile:](https://www.codewars.com/users/OvidioMiranda)
+
 ![Codewars Rank](https://www.codewars.com/users/OvidioMiranda/badges/large)
 
 
