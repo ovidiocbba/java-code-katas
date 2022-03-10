@@ -14,7 +14,8 @@
   <li>Row Weight (RowWeight)</li>
   <li>Silly Addition(SillyAddition)</li>
   <li>Square Every Digit(SquareEveryDigit)</li>
-  <li>SumCubesTest(SumCubesTest)</li>
+  <li>SumCubes Test(SumCubesTest)</li>
+  <li>Special Number(SpecialNumber)</li>  
 </ol>
 <b>6 Kyu</b>
 <ol>
