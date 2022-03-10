@@ -5,23 +5,27 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * The SquareEveryDigitTest class.
+ */
 public class SquareEveryDigitTest {
-    /**
-     * The HighestAndLowestTest is declared.
-     */
-    private SquareEveryDigit squareDigit;
 
     /**
-     * This method initialize the HighestAndLowestTest class.
+     * The SquareEveryDigitTest is declared.
+     */
+    private SquareEveryDigit squareEveryDigit;
+
+    /**
+     * This method initialize the SquareEveryDigitTest class.
      */
     @Before
     public void init() {
-        squareDigit = new SquareEveryDigit();
+        squareEveryDigit = new SquareEveryDigit();
     }
 
     @Test
     public void exampleTests() {
-        assertEquals(811181, new SquareEveryDigit().squareDigits(9119));
-        assertEquals(0, new SquareEveryDigit().squareDigits(0));
+        assertEquals(811181, squareEveryDigit.squareDigits(9119));
+        assertEquals(0, squareEveryDigit.squareDigits(0));
     }
 }
