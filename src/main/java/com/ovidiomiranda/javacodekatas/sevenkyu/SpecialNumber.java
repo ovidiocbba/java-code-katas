@@ -9,7 +9,7 @@ package com.ovidiomiranda.javacodekatas.sevenkyu;
  */
 public class SpecialNumber {
 
-  public String specialNumber(int number) {
+  public String specialNumber(final int number) {
     String isMagic = "NOT!!";
     char[] value = String.valueOf(number).toCharArray();
     for (char c : value) {

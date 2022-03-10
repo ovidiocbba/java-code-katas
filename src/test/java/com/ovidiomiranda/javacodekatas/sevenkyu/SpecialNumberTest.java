@@ -21,7 +21,7 @@ public class SpecialNumberTest {
   }
 
   @Test
-  public void Check_Single_Digit_Number() {
+  public void checkSingleDigitNumber() {
     assertEquals("Special!!", specialNumber.specialNumber(2));
     assertEquals("Special!!", specialNumber.specialNumber(3));
     assertEquals("NOT!!", specialNumber.specialNumber(9));
@@ -29,7 +29,7 @@ public class SpecialNumberTest {
   }
 
   @Test
-  public void Two_Digit_Number() {
+  public void twoDigitNumber() {
     assertEquals("Special!!", specialNumber.specialNumber(23));
     assertEquals("NOT!!", specialNumber.specialNumber(79));
     assertEquals("Special!!", specialNumber.specialNumber(32));
@@ -38,14 +38,14 @@ public class SpecialNumberTest {
   }
 
   @Test
-  public void Larger_Special_Number() {
+  public void largerSpecialNumber() {
     assertEquals("Special!!", specialNumber.specialNumber(513));
     assertEquals("NOT!!", specialNumber.specialNumber(709));
     assertEquals("NOT!!", specialNumber.specialNumber(538));
   }
 
   @Test
-  public void Mega_Special_Number() {
+  public void megaSpecialNumber() {
     assertEquals("Special!!", specialNumber.specialNumber(53532));
     assertEquals("NOT!!", specialNumber.specialNumber(970569));
     assertEquals("Special!!", specialNumber.specialNumber(11350224));
