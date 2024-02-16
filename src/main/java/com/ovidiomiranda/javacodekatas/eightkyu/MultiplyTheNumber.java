@@ -29,7 +29,7 @@ public class MultiplyTheNumber {
    * @param number the number.
    * @return the result.
    */
-  public int multiply(int number) {
+  public int multiply(final int number) {
     int size = String.valueOf(Math.abs(number)).length();
     return number * (int) (Math.pow(FIVE_DOUBLE.doubleValue(), size));
   }

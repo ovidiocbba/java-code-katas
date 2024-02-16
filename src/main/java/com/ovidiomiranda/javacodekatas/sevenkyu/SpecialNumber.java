@@ -1,5 +1,7 @@
 package com.ovidiomiranda.javacodekatas.sevenkyu;
 
+import static com.ovidiomiranda.javacodekatas.utils.Constants.FIVE;
+
 /**
  * <h1>Special Number (Special Numbers Series #5).</h1>
  *
@@ -9,11 +11,17 @@ package com.ovidiomiranda.javacodekatas.sevenkyu;
  */
 public class SpecialNumber {
 
+  /**
+   * Special Number.
+   *
+   * @param number the number.
+   * @return the special number.
+   */
   public String specialNumber(final int number) {
     String isMagic = "NOT!!";
     char[] value = String.valueOf(number).toCharArray();
     for (char c : value) {
-      if (Character.getNumericValue(c) <= 5) {
+      if (Character.getNumericValue(c) <= FIVE.value()) {
         isMagic = "Special!!";
       } else {
         isMagic = "NOT!!";
