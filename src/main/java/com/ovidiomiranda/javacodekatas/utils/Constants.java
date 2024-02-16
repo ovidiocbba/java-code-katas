@@ -3,11 +3,12 @@ package com.ovidiomiranda.javacodekatas.utils;
 /**
  * This class contains all the constant parameters.
  *
- *  @author Ovidio Miranda
+ * @author Ovidio Miranda
  */
 public enum Constants {
   NEGATIVE_SEVENTY_EIGHT(-78),
   NEGATIVE_NINETY(-90),
+  NEGATIVE_FIFTEEN(-15),
   NEGATIVE_TEN(-10),
   FIVE_NEGATIVE(-5),
   FOUR_NEGATIVE(-4),
@@ -20,6 +21,7 @@ public enum Constants {
   THREE(3),
   FOUR(4),
   FIVE(5),
+  FIVE_DOUBLE(5.0),
   TEN(10),
   TWELVE(12),
   THIRTEEN(13),
@@ -65,12 +67,14 @@ public enum Constants {
   TWO_HUNDRED_SEVEN(207),
   TWO_HUNDRED_ELEVEN(211),
   TWO_HUNDRED_THIRTY_FIVE(235),
-  TWO_HUNDRED_THIRTY_SIX(236);
+  TWO_HUNDRED_THIRTY_SIX(236),
+  TWO_HUNDRED_FIFTY(250);
 
   /**
    * The value.
    */
-  private int value;
+  private int integerValue;
+  private double doubleValue;
 
   /**
    * Create a new instance with integer as parameter.
@@ -78,7 +82,16 @@ public enum Constants {
    * @param value integer value.
    */
   Constants(final int value) {
-    this.value = value;
+    this.integerValue = value;
+  }
+
+  /**
+   * Create a new instance with double as parameter.
+   *
+   * @param value double value.
+   */
+  Constants(final double value) {
+    this.doubleValue = value;
   }
 
   /**
@@ -87,6 +100,15 @@ public enum Constants {
    * @return actual value in enum.
    */
   public int value() {
-    return value;
+    return integerValue;
+  }
+
+  /**
+   * Gets double value.
+   *
+   * @return actual value in enum.
+   */
+  public double doubleValue() {
+    return doubleValue;
   }
 }
