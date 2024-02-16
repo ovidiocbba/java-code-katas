@@ -87,3 +87,11 @@ jacocoTestReport {
 }
 
 check.dependsOn jacocoTestReport
+
+task checkstyle(dependsOn: [checkstyleMain, checkstyleTest])
+task pmd(dependsOn: [pmdMain, pmdTest])
+
+task staticAnalysis {
+	dependsOn 'checkstyle'
+	dependsOn 'pmd'
+}
