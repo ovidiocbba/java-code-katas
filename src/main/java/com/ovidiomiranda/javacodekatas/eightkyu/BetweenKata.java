@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * <h1>What is between?.</h1>
  *
- * <p>Complete the function that takes two integers (a, b, where a < b) and return an array of all
+ * <p>Complete the function that takes two integers (a, b, where a &#60; b) and return an array of all
  * integers between the input parameters, including them.</p>
  *
  * <br>Example:<br>
