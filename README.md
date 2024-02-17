@@ -6,6 +6,7 @@
   <li>What is between?(BetweenKata)</li>
   <li>Convert a Number to a String!(ConvertNumberToString)</li>
   <li>Total Points(TotalPoints)</li>
+  <li>Multiply the number</li>
 </ol>
 <b>7 Kyu</b>
 <ol>

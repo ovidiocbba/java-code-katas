@@ -1,5 +1,14 @@
 package com.ovidiomiranda.javacodekatas.sevenkyu;
 
+import static com.ovidiomiranda.javacodekatas.utils.Constants.FOUR;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.NINE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.ONE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.ONE_HUNDRED;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.ONE_HUNDRED_TWENTY_THREE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.TEN;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.THIRTY_SIX;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.THREE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.TWO;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -28,11 +37,11 @@ public class SumCubesTest {
    */
   @Test
   public void exampleTests() {
-    assertEquals(1, sumCubes.sumCubes(1));
-    assertEquals(9, sumCubes.sumCubes(2));
-    assertEquals(36, sumCubes.sumCubes(3));
-    assertEquals(100, sumCubes.sumCubes(4));
-    assertEquals(3025, sumCubes.sumCubes(10));
-    assertEquals(58155876, sumCubes.sumCubes(123));
+    assertEquals(ONE.value(), sumCubes.sumCubes(ONE.value()));
+    assertEquals(NINE.value(), sumCubes.sumCubes(TWO.value()));
+    assertEquals(THIRTY_SIX.value(), sumCubes.sumCubes(THREE.value()));
+    assertEquals(ONE_HUNDRED.value(), sumCubes.sumCubes(FOUR.value()));
+    assertEquals(3025, sumCubes.sumCubes(TEN.value()));
+    assertEquals(58155876, sumCubes.sumCubes(ONE_HUNDRED_TWENTY_THREE.value()));
   }
 }

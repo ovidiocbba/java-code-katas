@@ -1,5 +1,15 @@
 package com.ovidiomiranda.javacodekatas.sevenkyu;
 
+import static com.ovidiomiranda.javacodekatas.utils.Constants.FIFTY_FIVE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.NINE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.SEVEN;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.SEVENTY_NINE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.TEN;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.THIRTY_NINE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.THIRTY_TWO;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.THREE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.TWENTY_THREE;
+import static com.ovidiomiranda.javacodekatas.utils.Constants.TWO;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -22,19 +32,19 @@ public class SpecialNumberTest {
 
   @Test
   public void checkSingleDigitNumber() {
-    assertEquals("Special!!", specialNumber.specialNumber(2));
-    assertEquals("Special!!", specialNumber.specialNumber(3));
-    assertEquals("NOT!!", specialNumber.specialNumber(9));
-    assertEquals("NOT!!", specialNumber.specialNumber(7));
+    assertEquals("Special!!", specialNumber.specialNumber(TWO.value()));
+    assertEquals("Special!!", specialNumber.specialNumber(THREE.value()));
+    assertEquals("NOT!!", specialNumber.specialNumber(NINE.value()));
+    assertEquals("NOT!!", specialNumber.specialNumber(SEVEN.value()));
   }
 
   @Test
   public void twoDigitNumber() {
-    assertEquals("Special!!", specialNumber.specialNumber(23));
-    assertEquals("NOT!!", specialNumber.specialNumber(79));
-    assertEquals("Special!!", specialNumber.specialNumber(32));
-    assertEquals("NOT!!", specialNumber.specialNumber(39));
-    assertEquals("Special!!", specialNumber.specialNumber(55));
+    assertEquals("Special!!", specialNumber.specialNumber(TWENTY_THREE.value()));
+    assertEquals("NOT!!", specialNumber.specialNumber(SEVENTY_NINE.value()));
+    assertEquals("Special!!", specialNumber.specialNumber(THIRTY_TWO.value()));
+    assertEquals("NOT!!", specialNumber.specialNumber(THIRTY_NINE.value()));
+    assertEquals("Special!!", specialNumber.specialNumber(FIFTY_FIVE.value()));
   }
 
   @Test
