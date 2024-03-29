@@ -112,6 +112,12 @@
     <td>1</td>
     <td><code>Math.abs(x)</code>,<code>Math.max(x)</code>,<code>Math.min(x)</code>,<code>String.charAt(x)</code></td>
   </tr>
+  <tr>
+    <td>3. <a href="https://www.codewars.com/kata/54da5a58ea159efa38000836/train/java">ReducingBySteps</a></td>
+    <td>FindTheOddInt</td>
+    <td>2</td>
+    <td><code>.distinct().sorted().toArray()</code>,<code>.filter().count()</code>,<code>.stream(x).boxed().collect(groupingBy(identity(), counting()))</code></td>
+  </tr>
 </table>
 
 ### [CodeWars profile:](https://www.codewars.com/users/OvidioMiranda)
