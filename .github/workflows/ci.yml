@@ -16,7 +16,7 @@ jobs:
     steps:
       # Cloning you repository to the runner.
       - name: Checkout code
-        uses: actions/checkout@v3 # Necessary to access local action.
+        uses: actions/checkout@v4 # Necessary to access local action.
 
       - name: Installing the environment
         uses: ./.github/actions/install_environment
@@ -37,7 +37,7 @@ jobs:
     steps:
       # Cloning you repository to the runner.
       - name: Checkout code
-        uses: actions/checkout@v3 # Necessary to access local action.
+        uses: actions/checkout@v4 # Necessary to access local action.
 
       - name: Installing the environment
         uses: ./.github/actions/install_environment
@@ -47,7 +47,7 @@ jobs:
           gradle-ver: 6.9
       - run: gradle staticAnalysis
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: staticAnalysisReports${{ github.run_id }}
           path: ./build/reports
@@ -62,7 +62,7 @@ jobs:
     steps:
       # Cloning you repository to the runner.
       - name: Checkout code
-        uses: actions/checkout@v3 # Necessary to access local action.
+        uses: actions/checkout@v4 # Necessary to access local action.
 
       - name: Installing the environment
         uses: ./.github/actions/install_environment
@@ -72,10 +72,10 @@ jobs:
           gradle-ver: 6.9
       - run: gradle javadoc
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: javadoc${{ github.run_id }}
-          path: ./build/docs/javadoc
+          path: ./build/javadoc
           retention-days: 5
 
   execution:
@@ -91,7 +91,7 @@ jobs:
     steps:
       # Cloning you repository to the runner.
       - name: Checkout code
-        uses: actions/checkout@v3 # Necessary to access local action.
+        uses: actions/checkout@v4 # Necessary to access local action.
 
       - name: Installing the environment
         uses: ./.github/actions/install_environment
