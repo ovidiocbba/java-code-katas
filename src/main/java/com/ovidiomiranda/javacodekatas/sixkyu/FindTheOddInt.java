@@ -1,12 +1,10 @@
 package com.ovidiomiranda.javacodekatas.sixkyu;
 
-import static java.util.function.Function.identity;
-import static java.util.stream.Collectors.counting;
-import static java.util.stream.Collectors.groupingBy;
-
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  * <h1>Find the odd int.</h1>
@@ -51,7 +49,7 @@ public class FindTheOddInt {
    */
   public int findItV2(int[] a) {
     Map<Integer, Long> result = Arrays.stream(a).boxed()
-        .collect(groupingBy(identity(), counting()));
+        .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
     return Arrays.stream(a).filter(c -> result.get(c) % 2 == 1).findFirst().orElse(-1);
   }
 }
