@@ -60,7 +60,5 @@ public class SmileFaces {
     b.add(";}");
     b.add(":-D");
     System.out.println(countSmileysV2(b));       // should return 2;
-//    countSmileys([';D', ':-(', ':-)', ';~)']);     // should return 3;
-//    countSmileys([';]', ':[', ';*', ':$', ';-D'])
   }
 }
