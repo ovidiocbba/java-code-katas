@@ -1,5 +1,6 @@
 package com.ovidiomiranda.javacodekatas.eightkyu;
 
+import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
@@ -26,5 +27,15 @@ public class Average {
    */
   public int getAverage(final int[] marks) {
     return (int) IntStream.of(marks).average().orElse(Double.NaN);
+  }
+
+  /**
+   * Gets Average of students' grades.
+   *
+   * @param marks the students' grades.
+   * @return the average of the students' grades.
+   */
+  public int getAverageV2(final int[] marks) {
+    return (int) Arrays.stream(marks).average().orElse(0);
   }
 }
